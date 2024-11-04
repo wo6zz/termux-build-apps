@@ -12,7 +12,7 @@ After facing challenges in building apps and testing multiple methods, I’ve pu
 
 ### 1. Install Termux
 
-Termux is a powerful terminal app for Android, and it will serve as your development environment.
+[Termux](https://github.com/termux/termux-app/releases) is a powerful terminal app for Android, and it will serve as your development environment.
 
 ### 2. Install Required Packages 
 
