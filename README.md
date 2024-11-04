@@ -2,9 +2,9 @@
 
 In this tutorial, you'll learn how to build APKs with Termux, without needing Proot.
 
-:::note
-This guide assumes familiarity with Termux and Gradle basics. The steps below will help you get set up quickly.
-:::
+> [!NOTE]
+> This guide assumes familiarity with Termux and Gradle basics. The steps below will help you get set up quickly.
+
 
 After facing challenges in building apps and testing multiple methods, I’ve put together the best way to streamline the process. Just follow the steps below to get started with building your apps.
 
