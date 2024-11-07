@@ -48,7 +48,7 @@ You’ll need Gradle `v7.6.4`, which is compatible with the Java version install
 curl -L https://downloads.gradle-ldn.com/distributions/gradle-7.6.4-bin.zip -o ~/android-sdk/gradle-7.6.4-bin.zip
 
 # Unzip it
-unzip ~/android-sdk/gradle-7.6.4-bin.zip -d ~/android-sdk/gradle
+unzip -o ~/android-sdk/gradle-7.6.4-bin.zip -d ~/android-sdk/gradle
 
 # Add Gradle to your PATH
 echo 'export "PATH=$PATH:$PREFIX/android-sdk/gradle/bin"' >> ~/.bashrc
