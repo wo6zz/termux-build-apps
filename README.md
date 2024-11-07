@@ -51,7 +51,7 @@ curl -L https://downloads.gradle-ldn.com/distributions/gradle-7.6.4-bin.zip -o ~
 unzip -o ~/android-sdk/gradle-7.6.4-bin.zip -d ~/android-sdk/gradle
 
 # Add Gradle to your PATH
-echo 'export "PATH=$PATH:$PREFIX/android-sdk/gradle/bin"' >> ~/.bashrc
+echo 'export PATH=${PATH}:${ANDROID_HOME}/gradle/bin' >> ~/.bashrc
 source ~/.bashrc
 ```
 
