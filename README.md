@@ -25,7 +25,7 @@ pkg i curl openjdk-17 -y
 
 Next, we need the Android SDK. You can find setup instructions in its [repository](https://github.com/Sohil876/termux-sdk-installer), or run the following command directly:
 ```bash
-curl -sSL https://raw.githubusercontent.com/Sohil876/termux-sdk-installer/main/installer.sh -o install-android-sdk.sh && bash install-android-sdk.sh -i
+curl -sSL https://raw.githubusercontent.com/Sohil876/termux-sdk-installer/main/installer.sh -o ~/install-android-sdk.sh && bash ~/install-android-sdk.sh -i
 ```
 
 Once the SDK is installed, you’ll see a new directory named `android-sdk` in your Termux files. This directory contains all necessary tools.
@@ -45,10 +45,11 @@ yes | sdkmanager "platforms;android-34"
 You’ll need Gradle `v7.6.4`, which is compatible with the Java version installed. Download and set it up as follows:
 ```bash
 # Download Gradle
-curl -L https://downloads.gradle-ldn.com/distributions/gradle-7.6.4-bin.zip -o ~/android-sdk/gradle-7.6.4-bin.zip
+curl -L https://downloads.gradle-ldn.com/distributions/gradle-7.6.4-bin.zip -o $ANDROID_HOME/gradle-7.6.4-bin.zip
 
 # Unzip it
-unzip -o ~/android-sdk/gradle-7.6.4-bin.zip -d ~/android-sdk/gradle
+unzip $ANDROID_HOME/gradle-*-bin.zip -d $ANDROID_HOME/
+mv $ANDROID_HOME/gradle-*/ $ANDROID_HOME/gradle/
 
 # Add Gradle to your PATH
 echo 'export PATH=${PATH}:${ANDROID_HOME}/gradle/bin' >> ~/.bashrc
