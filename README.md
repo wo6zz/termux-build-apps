@@ -45,7 +45,7 @@ yes | sdkmanager "platforms;android-34"
 You’ll need Gradle `v7.6.4`, which is compatible with the Java version installed. Download and set it up as follows:
 ```bash
 # Download Gradle
-curl -L https://downloads.gradle-ldn.com/distributions/gradle-7.6.4-bin.zip -o $ANDROID_HOME/gradle-7.6.4-bin.zip
+curl -L https://services.gradle.org/distributions/gradle-7.6.4-bin.zip -o $ANDROID_HOME/gradle-7.6.4-bin.zip
 
 # Unzip it
 unzip $ANDROID_HOME/gradle-*-bin.zip -d $ANDROID_HOME/
